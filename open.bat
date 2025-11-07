@@ -2,8 +2,8 @@
 setlocal enabledelayedexpansion
 
 REM -- Roblox place info
-set "UNIVERSE_ID=6055893858"
-set "PLACE_ID=94541876566503"
+set "UNIVERSE_ID=1234"
+set "PLACE_ID=1234"
 
 REM -- Path to Roblox versions
 set "ROBLOX_VERSIONS=%localappdata%\Roblox\Versions"
@@ -28,4 +28,5 @@ exit /b
 :launch
 echo ✅ Found Studio executable: !STUDIO_EXE!
 echo ✅ In version: !LATEST_VERSION!
+
 start "" "!STUDIO_EXE!" -startEvent www.roblox.com/robloxQTStudioStartedEvent -task EditPlace -universeId %UNIVERSE_ID% -placeId %PLACE_ID%
